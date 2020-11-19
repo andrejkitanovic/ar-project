@@ -1,6 +1,6 @@
 import React from "react";
 import { OrbitControls, Box } from "drei";
-import { Canvas } from "react-three-fiber";
+// import { Canvas } from "react-three-fiber";
 import { ARCanvas } from "@react-three/xr";
 
 
