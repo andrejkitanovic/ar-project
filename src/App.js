@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "aframe";
+import {
+  // Box,
+  // Sphere,
+  // Cylinder,
+  // Plane,
+  // Sky,
+  // Text,
+  // Scene,
+  AFrameRenderer,
+  Marker
+} from "react-web-ar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <AFrameRenderer>
+      <Marker parameters={{preset:"hiro"}}>
+        <a-box color="blue">
+
+        </a-box>
+      </Marker>
+    </AFrameRenderer>
     </div>
   );
 }
