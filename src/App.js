@@ -5,7 +5,7 @@ import './App.css'
 // import Model2 from './assets/models/frame.usdz'
 // import usdz from "./test.usdz";
 import glb from './test.glb'
-import usdz from './test.usdz'
+import usdz from './proba.usdz'
 
 // import "@google/model-viewer";
 // import { ModelViewer, ARButton } from "@real2u/react-ar-components";
