@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       {/* <ARComponent/> */}
       <a href={Model} rel="al">Wall Picture</a>
-      <a href={Model} rel="al">Table Picture</a>
+      <a href={Model2} rel="al">Table Picture</a>
     </div>
   );
 }
