@@ -35,7 +35,7 @@ function App() {
         {isMobile && (
           <button className="view">
             <ARButton glb={glb} usdz={usdz}>
-              View in 3D
+              {/* View in 3D */}
             </ARButton>
           </button>
         )}
