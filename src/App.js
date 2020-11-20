@@ -4,7 +4,7 @@ import './App.css'
 // import Model from './assets/models/test.usdz'
 // import Model2 from './assets/models/frame.usdz'
 // import usdz from "./test.usdz";
-import glb from './out.glb'
+import glb from './test.glb'
 import usdz from './test.usdz'
 
 // import "@google/model-viewer";
