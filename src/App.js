@@ -10,7 +10,7 @@ import usdz from './out.usdz'
 // import "@google/model-viewer";
 // import { ModelViewer, ARButton } from "@real2u/react-ar-components";
 
-import {  isIE } from 'react-device-detect'
+import {  isIOS } from 'react-device-detect'
 
 // import Image from './image.jpg'
 // import { useState } from "react";
@@ -36,7 +36,7 @@ function App() {
             </ARButton>
           </button>
         )} */}
-        {isIE && <a href={usdz} className="view">View model in 3d</a>}
+        {isIOS && <a href={usdz} className="view">View model in 3d</a>}
       </div>
 
     
