@@ -58,3 +58,11 @@
   width: 600px;
   margin:0 auto;
 }
+
+@media (max-width:768px){
+ 
+.App .image {
+
+  width: 300px;
+}
+}
