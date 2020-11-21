@@ -1,4 +1,4 @@
-.App {
+/* .App {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -23,20 +23,7 @@
   margin-bottom: 50px;
 }
 
-.App .image .view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: 50px;
-  border-radius: 25px;
-  background: black;
-  border: none;
-  color: White;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 50px;
-}
+
 
 .App .image .choosen-image{
   display: flex;
@@ -44,7 +31,6 @@
   align-items: center;
   width: 80%;
   height: 400px;
-  /* background:yellow; */
   border:1px solid black;
   margin:0 auto;
   overflow: hidden;
@@ -72,4 +58,158 @@
 
   width: 300px;
 }
+} */
+
+.App {
+  width: 100%;
+  height: 100vh;
+  background: url("./assets/images/background.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App .modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  background: white;
+}
+
+.App .modal .picture {
+  position: relative;
+  width: 70vw;
+  height: 65vh;
+  background: url("./assets/images/main.png") no-repeat center center;
+  background-size: cover;
+  box-sizing: border-box;
+  color: white;
+  padding: 0 65px;
+  overflow: hidden;
+}
+
+.App .modal .picture h1 {
+  font-size: 64px;
+}
+
+.App .modal .picture p {
+  font-size: 24px;
+  min-width: 400px;
+  line-height: 30px;
+  width: 50%;
+  opacity: 0.7;
+}
+
+.App .modal .picture .circle {
+  position: absolute;
+  width: 690px;
+  height: 690px;
+  background: white;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -400px;
+}
+
+.App .modal .picture .circle .circle-ar {
+  position: absolute;
+  width: 152px;
+  height: 152px;
+  background: black;
+  border-radius: 50%;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.App .modal .picture .circle .container {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 100px;
+  /* align-items: flex-start; */
+}
+
+.App .modal .picture .circle .container .usage {
+  margin-left: 30px;
+}
+
+.App .modal .picture .circle .container .usage p {
+  color: black;
+  opacity: 1;
+  margin:0;
+  min-width: 200px;
+  font-size: 18px;
+}
+
+.App .modal .picture .circle .container .usage .supported{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.App .view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50px;
+  border-radius: 25px;
+  background: black;
+  color: White;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin:0 auto;
+  margin-top: 90px;
+  font-size: 14px;
+}
+
+.App model-viewer{
+  width: 60%;
+  margin:0 auto;
+  margin-top: 50px;
+}
+
+@media (max-width:720px){
+
+  .App .modal .picture {
+    width: calc(100vw - 80px);
+    padding:0 20px;
+  }
+
+  .App .modal .picture h1 {
+    font-size: 24px;
+    max-width: 100%;
+  }
+
+  .App .modal .picture p{
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+    min-width: auto;
+  }
+
+  .App .modal .picture .circle{
+    width: 100vw;
+    height: 580px;
+  }
+
+  .App .modal .picture .circle .circle-ar{
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    top:-5%;
+  }
+
+  .App .modal .picture .circle .container {
+    display: none;
+  }
 }
