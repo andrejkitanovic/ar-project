@@ -3,18 +3,12 @@ import "./App.css";
 import glb from "./assets/models/test.glb";
 import usdz from "./assets/models/test.usdz";
 
-// import { ModelViewer, ARButton } from "@real2u/react-ar-components";
-
 import { isIOS, isAndroid } from "react-device-detect";
 
 import example from "./assets/images/example.png";
 import androidios from "./assets/images/androidios.png";
 
-// import Image from './image.jpg'
-// import { useState } from "react";
-
 function App() {
-  // const [displayPicture, setDisplayPicture] = useState(false);
   return (
     <div className="App">
       <div className="modal">
@@ -47,15 +41,7 @@ function App() {
           </div>
         </div>
       </div>
-      {/* <div className="image">
-        <div className="choosen-image">
-          
-     
-        </div>
-
-   
-       
-      </div> */}
+  
     </div>
   );
 }
