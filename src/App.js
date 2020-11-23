@@ -37,7 +37,7 @@ function App() {
               </div>
             </div>
              {isIOS && <a href={usdz} className="view">View model in 3d</a>}
-             {isAndroid && <model-viewer ar src={glb} alt="this is a 3d model"></model-viewer>}
+             {isAndroid && <model-viewer controls camera-target="0m 0m 0m" ar src={glb} alt="this is a 3d model"></model-viewer>}
           </div>
         </div>
       </div>
